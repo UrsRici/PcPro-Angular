@@ -1,0 +1,162 @@
+.fundal__body{
+  position: relative;
+  scroll-behavior: smooth;
+	background-color:white;
+	margin: 20px;
+	margin-top: 30px;
+	border-radius: 2px;
+	padding: 15px;
+	min-width: 1550px
+}
+
+.chenar__tabel{
+  position: relative;
+  height: 200px;
+	border: 1px solid rgb(178, 181, 189);
+  width: 100%;
+}
+
+.imagine__produs{
+ height: 180px;
+ padding: 10px;
+}
+
+.font__produs__titlu{
+  width: 80%;
+  min-width: 1100px;
+  margin-left: 250px;
+  margin-top: -180px;
+	display: block;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: rgb(204, 31, 31);
+}
+
+.font__produs__lista{
+  width: 80%;
+  margin-left: 250px;
+	color: rgb(71, 71, 71);
+	font-size: 12px;
+	font-family: Arial, sans-serif;
+}
+
+.font__produs__pret{
+  position: absolute;
+  bottom: 50px;
+  right: 62px;
+	font-family: Arial, sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.font__produs__sterge{
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	background-color: rgb(223, 31, 31);
+	text-decoration: underline;
+	text-decoration-color: rgb(223, 31, 31);
+  cursor: pointer;
+}
+
+.font__produs__sterge:hover{
+	background-color: rgb(226, 86, 86);
+	text-decoration-color: rgb(226, 86, 86);
+}
+
+.font__produs__stergeall{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+	color: white;
+	font-family: Arial, sans-serif;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-radius: 5px;
+	background-color: rgb(223, 31, 31);
+	text-decoration: underline;
+	text-decoration-color: rgb(223, 31, 31);
+  cursor: pointer;
+}
+
+.font__produs__stergeall:hover{
+	background-color: rgb(226, 86, 86);
+	text-decoration-color: rgb(226, 86, 86);
+}
+.buton__produs__stergeall{
+  position: inherit;
+  min-height: 300px;
+}
+.font__plaseazacomanda{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    background-color: rgb(31, 172, 55);
+    text-decoration: underline;
+    text-decoration-color: rgb(31, 172, 55);
+    cursor: pointer;
+}
+
+.font__plaseazacomanda:hover{
+  background-color: rgb(33, 156, 53);
+  text-decoration-color: rgb(33, 156, 53);
+}
+
+.font__total{
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+}
+
+.produs_cantitate{
+  position: absolute;
+  bottom: 50px;
+  right: 20px;
+  width: 32px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+}
+
+/*/////////////////////////// Coada ///////////////////////////*/
+.coada{
+	text-align: center;
+	margin-top: 100px;
+}
+
+.coada__logo{
+	text-decoration: underline;
+	text-decoration-color: white;
+}
+
+.coada__logo__efecte{
+	height: 40px;
+	padding: 5px;
+	filter: grayscale(100%);
+}
+
+.coada__logo__efecte:hover{
+	transition: .4s;
+	filter: grayscale(0%);
+	-ms-transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}

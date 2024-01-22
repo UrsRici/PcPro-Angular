@@ -1,0 +1,240 @@
+@import "https://fonts.googleapis.com/css?family=Lato:100";
+
+.fundal__head{
+	background-color: #f5f5f5;
+	margin: -8px;
+	padding: 20px;
+  height: 160px;
+  min-width: 1600px;
+}
+
+.butoane{
+  float: right;
+  height: 103px;
+  width: 20%;
+  padding-top: 7px;
+  margin-top: -110px;
+}
+
+.button {
+  margin: auto;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: white;
+  color: black;
+  border: 2px solid #ff6d62;
+  text-align: center;
+  cursor: pointer;
+  width: 120px;
+}
+
+.button:hover {
+  background-color: #ff6d62;
+  color: white;
+}
+
+.zoom__logo{
+  cursor: pointer;
+  max-height: 140px;
+	transition: transform .2s;
+	margin-left: 3%;
+}
+
+.zoom__logo:hover{
+	-ms-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.zoom__icon__head{
+	font-family: Arial, sans-serif;
+	color: rgb(136, 27, 27);
+	font-size: 150%;
+}
+
+.zoom__scris__head{
+	font-family: Arial, sans-serif;
+	color: rgb(136, 27, 27);
+	font-size: 150%;
+}
+
+.zoom__scris__head:hover{
+	font-family: Arial, sans-serif;
+	text-decoration-color: rgb(136, 27, 27);
+	color: rgb(136, 27, 27);
+}
+
+/*/////////////////////////// Taburi ///////////////////////////*/
+
+.head__taburi__pozitie{
+  margin-top: 20px;
+	display:flex;
+    justify-content: center;
+}
+
+.head__taburi{
+	font-family: Arial, sans-serif;
+	font-size: 110%;
+	text-decoration: none;
+	margin-left: -5.5px;
+	color: white;
+	border: 2px solid black;
+	padding-left: 6px;
+	padding-right: 6px;
+	background-color: brown;
+	border-radius: 5px 5px 0px 0px;
+}
+
+.head__taburi:hover{
+	text-decoration: none;
+	padding-top: 4px;
+	background-color: rgb(216, 64, 64);
+	border-radius: 4px;
+}
+
+.dropdown{
+	position: relative;
+	display: inline-block;
+	border-radius: 4px;
+	margin: 0px 2px;
+}
+
+.dropdown__content{
+	margin-top: -0.8px;
+	margin-left: -4px;
+	display: none;
+	position: absolute;
+	background-color: brown;
+	min-width: 140px;
+	width: 200px;
+	z-index: 99;
+}
+
+.dropdown__content__a{
+	font-family: Arial, sans-serif;
+	color: black;
+	padding: 5px 5px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown__content__a:hover{
+	background-color: rgb(255, 188, 63);
+	text-decoration: none
+}
+
+.chenar__taburi{
+	background-color: white;
+	margin: 5px;
+	width: 170px;
+}
+
+.dropdown:hover .dropdown__content{
+	display: block;
+}
+
+.tab__imagine__1{
+	background-color: white;
+	padding: 30px;
+	height: 170px;
+	width: 240px;
+	margin-left: 180px;
+	margin-top: -213px;
+}
+
+.tab__imagine__2{
+	background-color: white;
+	padding: 10px;
+	height: 230px;
+	width: 330px;
+	margin-left: 180px;
+	margin-top: -139px;
+}
+
+.tab__imagine__3{
+	background-color: white;
+	padding: 10px;
+	height: 250px;
+	width: 325px;
+	margin-left: 180px;
+	margin-top: -82.5px;
+}
+
+.tab__imagine__4{
+	background-color: white;
+	padding: 20px;
+	height: 260px;
+	width: 455px;
+	margin-left: 180px;
+	margin-top: -166px;
+}
+
+.tab__imagine__5{
+	background-color: white;
+	padding: 10px;
+	height: 290px;
+	width: 475px;
+	margin-left: 180px;
+	margin-top: -251px;
+}
+
+.tab__imagine__6{
+	background-color: white;
+	padding: 10px;
+	height: 320px;
+	width: 470px;
+	margin-left: 180px;
+	margin-top: -138.5px;
+}
+
+.tab__imagine__7{
+	background-color: white;
+	padding: 10px;
+	height: 280px;
+	width: 450px;
+	margin-left: 180px;
+	margin-top: -111px;
+}
+
+.tab__imagine__8{
+	background-color: white;
+	padding: 10px;
+	height: 180px;
+	width: 480px;
+	margin-left: 180px;
+	margin-top: -82.5px;
+}
+
+.search_container{
+  height: 100px;
+  margin-top: -100px;
+  margin-left: 21%;
+  width: 58%;
+  text-align: center;
+}
+
+.search_container input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  width: 500px;
+}
+
+.search_container button {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+.search_container button:hover {
+  background: #ccc;
+}
+
+.div_logo{
+  height: 140px;
+  width: 20%;
+}
+

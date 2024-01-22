@@ -1,0 +1,159 @@
+<!-- Head -->
+
+<div class="fundal__head">
+
+  <!-- Logo -->
+  <div class="div_logo">
+    <img class="zoom__logo" src="assets/logo.png" routerLink="/home">
+  </div>
+
+  <!-- Search -->
+  <div class="search_container">
+    <form action="">
+      <input type="text" placeholder="Search..." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+  <!-- Favorite/Cos de Cumparaturi/Login -->
+  <div class="butoane">
+    <!-- Favorite
+    <p routerLink="/favorite" class="button">
+      <a class="zoom__icon__head">
+        <i class="fa">&#xf08a;</i>
+      </a>
+      <a style="text-decoration: none;" class="zoom__scris__head" >Favorite</a>
+    </p>-->
+    <!-- Cos de Cumparaturi -->
+    <p routerLink="/cos" class="button">
+      <a class="zoom__icon__head" style="margin-top: -10px;">
+        <i class="material-icons">&#xe8cc;</i>
+      </a>
+      <a style="text-decoration: none;" class="zoom__scris__head" >Cos</a>
+    </p>
+    <!-- Login -->
+    <p *ngIf="!isLogin" routerLink="login" class="button">
+      <a class="zoom__icon__head" >
+        <i class="fa">&#xf2c0;</i>
+      </a>
+      <a style="text-decoration: none;" class="zoom__scris__head" >Login</a>
+    </p>
+    <!-- Logout -->
+    <p *ngIf="isLogin" class="button">
+      <a class="zoom__icon__head" >
+        <i class="fa">&#xf2c0;</i>
+      </a>
+      <a (click)="logOut()" (click)="reload()" style="text-decoration: none;" class="zoom__scris__head" >Logout</a>
+    </p>
+  </div>
+
+  <!-- Taburi -->
+  <div class="head__taburi__pozitie">
+    <div class="dropdown">
+      <a routerLink="/home" class="head__taburi">Home</a>
+      <div style="width: 491px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a routerLink="/mobile"class="dropdown__content__a">Mobile</a>
+          <a routerLink="/laptop" class="dropdown__content__a" >laptop</a>
+          <a routerLink="/gaming" class="dropdown__content__a">Sisteme Gaming/Office</a>
+          <a routerLink="/componente" class="dropdown__content__a">Componente</a>
+          <a routerLink="/periferice" class="dropdown__content__a">Periferice</a>
+          <a routerLink="/monitoare" class="dropdown__content__a">Monitoare/TV</a>
+          <a routerLink="/software" class="dropdown__content__a">Softwere</a>
+          <a href="Home.html"><img class="tab__imagine__1" src="assets/logo.png"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/mobile" class="head__taburi">Mobile</a>
+      <div style="width: 541px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="mobile#SmartPhone">SmartPhone</a>
+          <a class="dropdown__content__a" href="mobile#SmartWatch">SmartWatch</a>
+          <a class="dropdown__content__a" href="mobile#Tablete">Tablete</a>
+          <a class="dropdown__content__a" href="mobile#Baterii Externe">Baterii Externe</a>
+          <a class="dropdown__content__a" href="mobile#Accesorii">Accesorii</a>
+          <a href="mobile"><img class="tab__imagine__2" src="assets/mobile oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/laptop" class="head__taburi">Laptop</a>
+      <div style="width: 536px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="laptop#Ultrabook">Ultrabook</a>
+          <a class="dropdown__content__a" href="laptop#Notebook / Laptop">Notebook / Laptop</a>
+          <a class="dropdown__content__a" href="laptop#Accesorii Notebook">Accesorii Notebook</a>
+          <a href="laptop"><img class="tab__imagine__3" src="assets/laptop oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/gaming" class="head__taburi">Sisteme Gaming/Office</a>
+      <div style="width: 686px; margin-left: -200px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="gaming#Sisteme ProPc">Sisteme ProPc</a>
+          <a class="dropdown__content__a" href="gaming#Sisteme brand">Sisteme brand</a>
+          <a class="dropdown__content__a" href="gaming#Sisteme All-In-One">Sisteme All-In-One</a>
+          <a class="dropdown__content__a" href="gaming#Sisteme Mini-PC">Sisteme Mini-Pc</a>
+          <a class="dropdown__content__a" href="gaming#Servere">Servere</a>
+          <a class="dropdown__content__a" href="gaming#Cabinete metalice">Cabinete metalice</a>
+          <a href="gaming"><img class="tab__imagine__4" src="assets/sistem oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="componente"class="head__taburi">Componente</a>
+      <div style="width: 686px; margin-left: -282px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="componente">Placi video</a>
+          <a class="dropdown__content__a" href="componente">Procesoare</a>
+          <a class="dropdown__content__a" href="componente">Placi de baza</a>
+          <a class="dropdown__content__a" href="componente">Memorii</a>
+          <a class="dropdown__content__a" href="componente">SSD</a>
+          <a class="dropdown__content__a" href="componente">Hard disk-uri</a>
+          <a class="dropdown__content__a" href="componente">Surse</a>
+          <a class="dropdown__content__a" href="componente">Carcase</a>
+          <a class="dropdown__content__a" href="componente">Coolere</a>
+          <a href="componente"><img class="tab__imagine__5" src="assets/componente oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/periferice"class="head__taburi">Periferice</a>
+      <div style="width: 681px; margin-left: -393px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="periferice#Mouse gaming">Mouse gaming</a>
+          <a class="dropdown__content__a" href="periferice#Mouse pad">Mouse pad</a>
+          <a class="dropdown__content__a" href="periferice#Casti gaming">Casti gaming</a>
+          <a class="dropdown__content__a" href="periferice#Tastaturi gaming">Tastaturi gaming</a>
+          <a class="dropdown__content__a" href="periferice#Scaune gaming">Scaune gaming</a>
+          <a href="periferice"><img class="tab__imagine__6" src="assets/periferice oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/monitoare" class="head__taburi">Monitoare/TV</a>
+      <div style="width: 661px; margin-left: -461px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="monitoare#Monitoare LED">Monitoare LED</a>
+          <a class="dropdown__content__a" href="monitoare#Accesorii monitoare">Accesorii monitoare</a>
+          <a class="dropdown__content__a" href="monitoare#Televizoare LED">Televizoare LED</a>
+          <a class="dropdown__content__a" href="monitoare#Accesorii televizoare">Accesorii televizoare</a>
+          <a href="monitoare"><img class="tab__imagine__7" src="assets/monitor oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a routerLink="/software" class="head__taburi">Softwere</a>
+      <div style="width: 691px; margin-left: -612px;" class="dropdown__content">
+        <div class="chenar__taburi">
+          <a class="dropdown__content__a" href="Ssoftware#Sisteme de operare">Sisteme de operare</a>
+          <a class="dropdown__content__a" href="Ssoftware#Apricatii Office">Apricatii Office</a>
+          <a class="dropdown__content__a" href="Ssoftware#Antivirusi">Antivirusi</a>
+          <a href="Ssoftware"><img class="tab__imagine__8" src="assets/softwere oferta.PNG"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

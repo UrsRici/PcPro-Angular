@@ -1,0 +1,313 @@
+<div class="fundal__body">
+  <div class="colaj" style="background-image: url('assets/1.jpg');">
+
+      <!-- Categorii -->
+      <div class="Categorii">
+        <h2 style="padding-top: 5px; padding-left: 5px;">Componente</h2>
+        <div style="margin-left: 10px;">
+          <h4>Categorii</h4>
+          <h5><a class="font__categorii">Placi video</a></h5>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Placi video profesionale</a></h6>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Coolere placi video</a></h6>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Procesoare</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Placi de baza</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Memorii</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">SSD</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Hard disk-uri</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Surse</a></h5>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Carcase</a></h5>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Accesorii carcase</a></h6>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Coolere</a></h5>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Pasta termoconductoare</a></h6>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Accesorii coolere</a></h6>
+          <h5 style="margin-top: -20px;"><a class="font__categorii">Ventilatoare / radiatoare</a></h5>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Filtre de praf</a></h6>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Fan controllere</a></h6>
+          <h6 style="margin-top: -20px;"><a class="font__categorii">^ Accesorii ventilatoare / radiatoare</a></h6>
+        </div>
+      </div>
+
+      <!-- Placi video -->
+      <div style="margin-left: 20%; margin-top: -426px;" id="Placi video">
+          <h3 class="arial">
+              <a style="text-decoration: none; color: black;">Placi video</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_placivideo_list">
+              <img class="imagine__produs" src="{{element.link}}">
+              <p class="font__produs__titlu">
+                {{element.titlu}}
+              </p>
+              <ul class="font__produs__lista">
+                <li>{{element.descriere1}}</li>
+                <li>{{element.descriere2}}</li>
+                <li>{{element.descriere3}}</li>
+                <li>{{element.descriere4}}</li>
+              </ul>
+                <b class="font__produs__pret">{{element.pret}} Ron</b>
+                <p></p>
+                <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Procesoare -->
+      <div style="margin-left: 20%" id="Procesoare">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Procesoare</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_procesoare_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Placi de baza -->
+      <div style="margin-left: 20%;" id="Placi de baza">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Placi de baza</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_placidebaza_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Memorii -->
+      <div style="margin-left: 20%;" id="Memorii">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Memorii</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_memorii_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- SSD -->
+      <div style="margin-left: 20%;" id="SSD">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">SSD</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_ssd_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Hard disk-uri -->
+      <div style="margin-left: 20%;" id="Hard disk-uri">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Hard disk-uri</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_hdd_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Surse -->
+      <div style="margin-left: 20%;" id="Surse">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Surse</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_surse_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Carcase -->
+      <div style="margin-left: 20%;" id="Carcase">
+        <h3 class="arial">
+          <a  style="text-decoration: none; color: black;">Carcase</a>
+        </h3>
+        <table>
+          <th class="chenar__tabel" *ngFor="let element of componente_carcase_list">
+          <img class="imagine__produs" src="{{element.link}}">
+          <p class="font__produs__titlu">
+            {{element.titlu}}
+          </p>
+          <ul class="font__produs__lista">
+            <li>{{element.descriere1}}</li>
+            <li>{{element.descriere2}}</li>
+            <li>{{element.descriere3}}</li>
+            <li>{{element.descriere4}}</li>
+          </ul>
+            <b class="font__produs__pret">{{element.pret}} Ron</b>
+            <p></p>
+            <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+          </th>
+        </table>
+      </div>
+
+      <!-- Coolere -->
+      <div style="margin-left: 20%;" id="Coolere">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Coolere</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_coolere_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+
+      <!-- Ventilatoare / radiatoare -->
+      <div style="margin-left: 20%;" id="Ventilatoare / radiatoare">
+          <h3 class="arial">
+              <a  style="text-decoration: none; color: black;">Ventilatoare / radiatoare</a>
+          </h3>
+          <table>
+            <th class="chenar__tabel" *ngFor="let element of componente_ventilatoare_list">
+            <img class="imagine__produs" src="{{element.link}}">
+            <p class="font__produs__titlu">
+              {{element.titlu}}
+            </p>
+            <ul class="font__produs__lista">
+              <li>{{element.descriere1}}</li>
+              <li>{{element.descriere2}}</li>
+              <li>{{element.descriere3}}</li>
+              <li>{{element.descriere4}}</li>
+            </ul>
+              <b class="font__produs__pret">{{element.pret}} Ron</b>
+              <p></p>
+              <b class="font__produs__add" (click)="addCos(element)">Adauga in cos</b>
+            </th>
+          </table>
+      </div>
+  </div>
+
+  <!-- Coada -->
+  <div class="coada">
+      <a class="coada__logo" href="https://www.intel.com/content/www/us/en/homepage.html">
+          <img class="coada__logo__efecte" src="assets/intel.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.amd.com/en">
+          <img class="coada__logo__efecte" src="assets/amd.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.nvidia.com/ro-ro/geforce/">
+          <img class="coada__logo__efecte" src="assets/geforce.png">
+      </a>
+      <a class="coada__logo" href="https://www.gigabyte.com/">
+          <img class="coada__logo__efecte" src="assets/gigabyte.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.acer.com/ac/ro/RO/content/home">
+          <img class="coada__logo__efecte" src="assets/acer.png">
+      </a>
+      <a class="coada__logo" href="https://www.asus.com/ro/">
+          <img class="coada__logo__efecte" src="assets/asus.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.logitech.com/en-us">
+          <img class="coada__logo__efecte" src="assets/logitech.png">
+      </a>
+      <a class="coada__logo" href="https://www.lenovo.com/us/en?Redirect=False">
+          <img class="coada__logo__efecte" src="assets/lenovo.png">
+      </a>
+      <a class="coada__logo" href="https://www8.hp.com/ro/ro/home.html">
+          <img class="coada__logo__efecte" src="assets/hp.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.samsung.com/ro/">
+          <img class="coada__logo__efecte" src="assets/samsung.png">
+      </a>
+      <a class="coada__logo" href="https://www.apple.com/">
+          <img class="coada__logo__efecte" src="assets/apple.jpg">
+      </a>
+      <a class="coada__logo" href="https://www.microsoft.com/ro-ro/">
+          <img class="coada__logo__efecte" src="assets/microsoft.png">
+      </a>
+      <a class="coada__logo" href="https://shop.westerndigital.com/">
+          <img class="coada__logo__efecte" src="assets/wd.png">
+      </a>
+  </div>
+</div>

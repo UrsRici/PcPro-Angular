@@ -1,0 +1,67 @@
+<div class="fundal__body">
+  <div *ngFor="let element of cosUser;">
+    <div class="chenar__tabel">
+      <img class="imagine__produs" src="{{element.link}}">
+      <p class="font__produs__titlu">
+        <b>{{element.titlu}}</b>
+      </p>
+      <ul class="font__produs__lista">
+        <li>{{element.descriere1}}</li>
+        <li>{{element.descriere2}}</li>
+        <li>{{element.descriere3}}</li>
+        <li>{{element.descriere4}}</li>
+      </ul>
+      <input [(ngModel)]="element.cantitate" (keyup.enter)="reload()" (ngModelChange)="actualizeazaCos(element.cantitate)" name="cantitate" class="produs_cantitate" min="1" max="99" type="number" />
+      <b class="font__produs__pret">{{element.pret}} Ron</b>
+      <b (click)="DeletecosProdusUser(element)" class="font__produs__sterge">Sterge</b>
+    </div>
+  </div>
+  <div class="buton__produs__stergeall">
+    <b class="font__produs__stergeall" (click)="DeleteAllcosUser()">Golire cos</b>
+    <b class="font__total">Total:{{total}} Ron</b>
+    <b class="font__plaseazacomanda" (click)="PlaseazaComanda()">Plaseaza comanda</b>
+  </div>
+  <!-- Coada -->
+  <div class="coada">
+    <a class="coada__logo" href="https://www.intel.com/content/www/us/en/homepage.html">
+        <img class="coada__logo__efecte" src="assets/intel.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.amd.com/en">
+        <img class="coada__logo__efecte" src="assets/amd.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.nvidia.com/ro-ro/geforce/">
+        <img class="coada__logo__efecte" src="assets/geforce.png">
+    </a>
+    <a class="coada__logo" href="https://www.gigabyte.com/">
+        <img class="coada__logo__efecte" src="assets/gigabyte.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.acer.com/ac/ro/RO/content/home">
+        <img class="coada__logo__efecte" src="assets/acer.png">
+    </a>
+    <a class="coada__logo" href="https://www.asus.com/ro/">
+        <img class="coada__logo__efecte" src="assets/asus.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.logitech.com/en-us">
+        <img class="coada__logo__efecte" src="assets/logitech.png">
+    </a>
+    <a class="coada__logo" href="https://www.lenovo.com/us/en?Redirect=False">
+        <img class="coada__logo__efecte" src="assets/lenovo.png">
+    </a>
+    <a class="coada__logo" href="https://www8.hp.com/ro/ro/home.html">
+        <img class="coada__logo__efecte" src="assets/hp.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.samsung.com/ro/">
+        <img class="coada__logo__efecte" src="assets/samsung.png">
+    </a>
+    <a class="coada__logo" href="https://www.apple.com/">
+        <img class="coada__logo__efecte" src="assets/apple.jpg">
+    </a>
+    <a class="coada__logo" href="https://www.microsoft.com/ro-ro/">
+        <img class="coada__logo__efecte" src="assets/microsoft.png">
+    </a>
+    <a class="coada__logo" href="https://shop.westerndigital.com/">
+        <img class="coada__logo__efecte" src="assets/wd.png">
+    </a>
+  </div>
+</div>
+
